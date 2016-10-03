@@ -3,9 +3,6 @@
 
 namespace _09_Portfolio
 {
-    
-
-    
     internal class Stock : IAsset
     {
         private string _symbol;
@@ -66,7 +63,7 @@ namespace _09_Portfolio
             return _pricePerShare * _numShares;
         }
 
-        internal static double TotalValue(Stock[] stocks)
+        internal static double TotalValue(IAsset[] stocks)
         {
             double _totalValue = 0;  
 
